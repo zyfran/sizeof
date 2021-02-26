@@ -213,3 +213,31 @@ go.1.14 unit.test 2/2:
     - .unit.test.script.cover
     - .i386
   image: golang:1.14-alpine
+
+go.1.15 unit.test 1/2:
+  extends:
+    - .global
+    - .unit.test.script.cover
+    - .amd64
+  image: golang:1.15-alpine
+
+go.1.15 unit.test 2/2:
+  extends:
+    - .global
+    - .unit.test.script.cover
+    - .i386
+  image: golang:1.15-alpine
+
+go.1.16 unit.test 1/2:
+  extends:
+    - .global
+    - .unit.test.script.cover
+    - .amd64
+  image: golang:1.16-alpine
+
+go.1.16 unit.test 2/2:
+  extends:
+    - .global
+    - .unit.test.script.cover
+    - .i386
+  image: golang:1.16-alpine
